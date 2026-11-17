@@ -1,0 +1,38 @@
+camera:
+  index: 0
+  width: 1280
+  height: 720
+  mirror: true
+
+virtualcam:
+  enabled: true
+  fps: 30 
+
+overlay:
+  display_duration: 2.0      # Lama stiker tampil (detik)
+  cooldown_seconds: 3.0      # Jeda anti-spam setelah stiker hilang (detik)
+  sticker_size: 160          # Ukuran maksimal lebar/tinggi stiker (piksel)
+  position_mode: "follow"    # "follow" (ikuti wajah/tangan) atau "corner" (pojok kanan atas)
+  show_debug_landmarks: true # Tampilkan kotak & garis landmark
+
+smile:
+  threshold: 0.45            # Ambang skor senyum (0.0 - 1.0)
+
+gestures:
+  smile:
+    stickers:
+      - "assets/stickers/custom/marah.png.33"
+    anchor: "face_top"
+  thumbs_up:
+    stickers:
+      - "assets/stickers/custom/siap-bang.png.47"
+    anchor: "hand_top"
+  peace:
+    sticker: "assets/stickers/custom/adios.05"
+    anchor: "hand_top"
+  open_palm:
+    sticker: "assets/stickers/custom/kucing.48"
+    anchor: "hand_top"
+  fist:
+    sticker: "assets/stickers/fist.png"
+    anchor: "hand_top"
